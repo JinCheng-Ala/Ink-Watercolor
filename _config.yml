@@ -1,4 +1,32 @@
-theme: jekyll-theme-minimal
+theme: minimal-mistakes-jekyll
 title: 我的小博客
 email: example@example.com
 description: 这是我第一个 GitHub Pages 网站
+author: JinCheng-Ala-Ink-Watercolor
+baseurl: "/Ink-Watercolor"
+url: "https://jincheng-ala.github.io"
+# 启用 kramdown 数学支持
+markdown: kramdown
+kramdown:
+  math_engine: mathjax
+
+# Minimal Mistakes 主题配置
+minimal_mistakes_skin: "default"  # 皮肤样式，可以选择 "air", "contrast", "dark" 等
+locale: "zh-CN"  # 设置语言为中文
+search: true  # 启用搜索功能
+
+# 默认设置，启用 MathJax
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      mathjax: true  # 自动为所有文章启用 MathJax
+      read_time: true
+      comments: false
+      share: true
+      related: true
+
+plugins:
+  - jekyll-seo-tag
